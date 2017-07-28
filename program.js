@@ -1,32 +1,36 @@
+var getModule = require('./filter');
+
+// console.log(getModule.test);
+
 //	// FILTERED LS
 
-	var fs = require("fs");
+	// var fs = require("fs");
 
-	var path = require("path");
+	// var path = require("path");
 
-	var userExtension = "." + process.argv[3];
+	// var userExtension = "." + process.argv[3];
 
-	fs.readdir(process.argv[2], function doneReading(err, list){
+	// fs.readdir(process.argv[2], function doneReading(err, list){
 
-		if( err ) {
+	// 	if( err ) {
 
-			console.log( err );
+	// 		console.log( err );
 
-		} else {
+	// 	} else {
 
-			for (i = 0; i < list.length ; i++) { 
+	// 		for (i = 0; i < list.length ; i++) { 
 
-				var fileExtensions = path.extname( list[i] );
+	// 			var fileExtensions = path.extname( list[i] );
 
-				if ( userExtension == fileExtensions ) {
+	// 			if ( userExtension == fileExtensions ) {
 
-					console.log( list[i] );
+	// 				console.log( list[i] );
 
-				}
-			}
-		}
+	// 			}
+	// 		}
+	// 	}
 
-	});
+	// });
 
 
 //	// MY FIRST ASYNC I/O
